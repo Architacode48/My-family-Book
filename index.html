@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <h1>MY FAMILY BOOK</h1>
+    </head>
+    <body>
+        <img id="album"src="https://www.storyjumper.com/coverimg/30221326/My-Family?nv=0&width=510&reader=t">
+        <div>
+            <div>
+                <button type="button" onclick="next()">Next</button>
+                </div>
+        </div>
+        <p id="member">My Family Book</p>
+        <script>
+            var members=["My Father Ashutosh Pandey","My Mother Nisha Pandey","Me Archita Pandey","My Sister Anusha Pandey","My Brother Kartikeya Pandey"];
+            var albums=[
+            "https://www.seekpng.com/png/detail/373-3737886_man-clipart-dad-animated-picture-of-father.png",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDmU2OfmeY0C5nd-_tWpRgoCJKtLgomZbtjg&usqp=CAU",
+            "https://pm1.narvii.com/6262/912a8b24a269ae75daf9bb3f62aeea7b794877af_hq.jpg",
+            "https://us.123rf.com/450wm/yupiramos/yupiramos1905/yupiramos190534185/122724605-stock-vector-little-girl-kid-character-vector-illustration-design.jpg?ver=6",
+            "https://media.istockphoto.com/vectors/her-older-sister-and-younger-brother-were-going-to-school-together-vector-id1273466591"];
+
+            var i=0;
+            function next(){
+            document.getElementById("member").innerHTML=members[i];
+            document.getElementById("album").src=albums[i];
+            i++;
+            if(i==5){
+                i=0;
+            }
+            };
+        </script></body>
+</html>
